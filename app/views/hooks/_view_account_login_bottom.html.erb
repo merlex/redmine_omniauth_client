@@ -3,7 +3,7 @@
 <% if Setting.plugin_redmine_omniauth_client['oauth_authentification'] %>
 	<div class="div-login">
 		<%= link_to oauth_client_path(:back_url => back_url), :class=>"link-login" do %>
-			Войти с помощью учетной записи CMG
+			<%=Setting.plugin_redmine_omniauth_client['auth_link_title'] %>
 		<% end %>
 	</div>
 <% end %>

@@ -10,6 +10,7 @@ Redmine::Plugin.register :redmine_omniauth_client do
 
   settings :default => {
     :app_name => "Application name",
+    :auth_link_title => "OAuth2 Login",
     :site_url => "http://example.net",
     :auth_url => "/oauth/v2/auth",
     :token_url => "/oauth/v2/token",
